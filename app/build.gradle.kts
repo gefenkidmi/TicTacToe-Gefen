@@ -4,19 +4,21 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tictactoe_gefen"
+    namespace = "com.example.tictactoe"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.tictactoe_gefen"
-        minSdk = 35
+        applicationId = "com.example.tictactoe"
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
